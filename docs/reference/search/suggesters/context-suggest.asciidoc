@@ -223,23 +223,23 @@ variants of defining a `geo_point`.
 --------------------------------------------------
 PUT services/service/1
 {
-    "name": "some hotel 1",
-    "suggest_field": {
-        "input": ["my hotel", "this hotel"],
-        "context": {
-            "location": {
-                    "lat": 0,
-                    "lon": 0
-        "contexts": [
-            "location": [
+    "name":"some hotel 1",
+    "suggest_field":{
+        "input":[
+            "my hotel",
+            "this hotel"
+        ],
+        "contexts":{
+            "location":[
                 {
-                    "lat": 43.6624803,
-                    "lon": -79.3863353
+                    "lat":43.6624803,
+                    "lon":-79.3863353
                 },
                 {
-                    "lat": 43.6624718,
-                    "lon": -79.3873227
+                    "lat":43.6624718,
+                    "lon":-79.3873227
                 }
+            ]
         }
     }
 }
